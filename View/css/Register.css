@@ -27,3 +27,13 @@
     font-size: 3rem;
 
 }
+.register-container{
+
+    text-align: center;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 15rem;
+    font-size: 2rem;
+}

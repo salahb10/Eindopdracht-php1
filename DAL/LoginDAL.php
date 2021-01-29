@@ -1,36 +1,35 @@
 <?php
-include 'DBconnection.php';
+include 'DbConnection.php';
 include 'UserDAL.php';
 class LoginDAL
 {
-    private $connection;
-    private $instance;
-    private $userDAL;
-    public function __construct()
-    {
-        $this->instance = DbConnection::getInstance();
-        $this->connection = $this->instance->getConnection();
-        $this->userDAL = new UserDAL();
-    }
+     private $connection;
+     private $instance;
+     private $userDAL;
+     public function __construct()
+     {
+           $this->instance = DbConnection::getInstance();
+           $this->connection = $this->instance->getConnection();
+           $this->userDAL = new UserDAL();
+     }
 
-    //Goes through the login process
-    public function UserLogin($email, $password)
-    {
-        //chechs if email exists
-        $user = $this->userDAL->GetUserByEmail($email);
-        //checks the password
-        if ($user->password === $password) {
-            return true;
-        } else {
-            return false;
-        }
+    // Login process
+    public function UserLogin($Email, $Password)
+       {
+               //Check email 
+               $user = $this->userDAL->GetUserByEmail($Email);
+               //Check password
+               if ($user->Password === $Password) {
+                  return true;}
+                 else {
+            return false;}
     }
-    //goes through the registration process
-    public function UserRegister($firstName, $lastName, $email, $password)
+    //Registration process
+    public function UserRegister($FirstName, $LastName, $Email, $Password)
     {
-        //uses prepared statements for the registration
-        $stmt = $this->connection->prepare("INSERT INTO users  (firstName, lastName, email, password) VALUES(?,?,?,?)");
-        $stmt->bind_param("ssss", $firstName, $lastName, $email, $password);
+        //Prepared statements for the registration
+        $stmt = $this->connection->prepare("INSERT INTO users  (firstname, lastname, email, password) VALUES(?,?,?,?)");
+        $stmt->bind_param("ssss", $FirstName, $LastName, $Email, $Password);
         try {
             $stmt->execute();
             return true;

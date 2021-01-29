@@ -1,10 +1,7 @@
 <?php
-require_once '../Logic/LoginLogic.php';
-require_once '../Logic/UserLogic.php'
-
 ?>
 <!DOCTYPE HTML>
-<hmtl lang="nl">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
@@ -27,14 +24,34 @@ require_once '../Logic/UserLogic.php'
     </section>
 </section>
 <section class="NavigationBar">
-    <a class="active"  href="Homepage.php">Home</a>
+    <a href="Homepage.php">Home</a>
     <a href="Products.php">Products</a>
-    <a href="Contact.php">Contact</a>
-    <a href="Register.php">Register</a>
+    <a class="active" href="Register.php">Register</a>
     <a href="Login.php">Login</a>
 
 </section>
 
+<section class="MainRegister" id= "mainregister">
+    <header class="titleHeaders">
+        <h1>Registration form</h1></header>
+
+    <section class="register-container">
+        <form id = "registerForm" method="post">
+            <label>First Name</label>
+            <input type="text" placeholder="e.g John" name = "registerFirstName">
+            <br>
+            <label>Last Name</label>
+            <input type="text" placeholder="e.g Smith" name = "registerLastName">
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="e.g Johnsmith@gmail.com" name="registerEmail">
+            <br>
+            <label>Password</label>
+            <input type="password"  name="registerPassword">
+            <br>
+            <button type="submit" name="register" form="registerForm" value="Submit">Register</button>
+        </form>
+    </section>
 
 
 

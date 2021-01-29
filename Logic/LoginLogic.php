@@ -3,16 +3,17 @@ require_once dirname(__FILE__).'/../DAL/LoginDAL.php';
 require_once dirname(__FILE__).'/../DAL/UserDAL.php';
 require_once dirname(__FILE__).'/../Logic/UserLogic.php';
 
+
    $loginDal = new LoginDAL();
    $userDal = new UserDAL();
    $userLogic = new UserLogic();
    session_start();
 
-//goes through login process when button is clicked
+//when clicking on the login button would the system log in
 if (isset($_POST['login']))
 {
     $user = $userLogic->SearchUserByEmail($_POST['loginEmail']);
-    // Check email and password in DAL layer
+    // check if the email and password are correct
     if ($loginDal->UserLogin($_POST['loginEmail'], $_POST['loginPassword']))
     {
         $_SESSION['email'] = $user[0]->getEmail();
@@ -25,7 +26,7 @@ if (isset($_POST['login']))
     }
 };
 
-//goes through registration process when register button is clicked
+//when clicking on the register buton would it be registered
 if (isset($_POST['register']))
 {
 

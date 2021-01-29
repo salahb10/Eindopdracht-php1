@@ -24,7 +24,6 @@
 <section class="NavigationBar">
     <a class="active"  href="Homepage.php">Home</a>
     <a href="Products.php">Products</a>
-    <a href="Contact.php">Contact</a>
     <a href="Register.php">Register</a>
     <a href="Login.php">Login</a>
 

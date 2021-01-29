@@ -6,6 +6,7 @@
     <meta name="keywords" content="webshop, sfeerhaarden">
     <link href="images/logo.jpg" rel="shortcut icon" type="image/x-icon" />
     <link href="css/Banner.css" rel="stylesheet" type="text/css">
+    <link href="css/Register.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -29,7 +30,7 @@
 </section>
 
 <section class="MainContent">
-    <h1 id="TitleRegistration"> Your registration is succesfully completed !</h1>
+    <p id="ProductsTitle"> Your registration is succesfully completed !</p>
    
 
  

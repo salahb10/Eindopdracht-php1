@@ -1,11 +1,8 @@
 <?php
-require_once '../Logic/LoginLogic.php';
-require_once '../Logic/UserLogic.php';
 require_once '../Logic/FireplaceLogic.php';
-require_once '../DAL/FireplaceDAL.php';
 ?>
 <!DOCTYPE HTML>
-<hmtl lang="nl">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
@@ -16,9 +13,6 @@ require_once '../DAL/FireplaceDAL.php';
     <link href="css/Products.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
- 
-
 <section class="Banner">
     <section class="leftBanner">
         <img class="logoImage" src="images/logo.jpg">
@@ -29,17 +23,16 @@ require_once '../DAL/FireplaceDAL.php';
     </section>
 </section>
 <section class="NavigationBar">
-    <a class="active"  href="Homepage.php">Home</a>
-    <a href="Products.php">Products</a>
-    <a href="Contact.php">Contact</a>
+    <a href="Homepage.php">Home</a>
+    <a class="active" href="Products.php">Products</a>
     <a href="Register.php">Register</a>
     <a href="Login.php">Login</a>
 
 </section>
 
 <section class="MainContent">
-    <section class="products"></section>
-    <h1 id="ProductsTitle"> Products</h1>
+<section class="products"></section>
+    <h1 id="ProductsTitle">Products</h1>
    <?php
    
         $fireplaces = [];

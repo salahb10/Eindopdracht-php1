@@ -1,6 +1,6 @@
 <<?php
 require_once dirname(__FILE__) . '/../Model/User.php';
-include 'DBconnection.php';
+include 'DbConnection.php';
 
     class UserDAL
     {

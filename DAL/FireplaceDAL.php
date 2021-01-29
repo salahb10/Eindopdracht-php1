@@ -1,6 +1,6 @@
 <?php
-require_once '../Model/Fireplace.php';
-include 'DBconnection.php';
+require_once dirname(__FILE__) . '/../Model/Fireplace.php';
+require_once dirname(__FILE__) . '/DbConnection.php';
 
 class FireplaceDAL
 {
