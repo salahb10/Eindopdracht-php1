@@ -1,0 +1,64 @@
+
+.MainContent {
+    background-image: url(../images/home.png);
+    background-position: 0rem 8.375rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 130rem;
+    margin-top: 10.5rem;
+    font-family: Segoe UI;
+    font-weight: bold;
+
+}
+
+.body {
+    font-family: Segoe UI;
+    font-weight: bold;
+    
+}
+#TitleWelkom{
+    text-align: center;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 2rem;
+    font-size: 3rem;
+
+}
+#Description1{
+    text-align: center;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: yellow;
+    position: relative;
+    top: 1rem;
+    font-size: 2rem;
+}
+#Description2{
+    text-align: center;
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-variant: unset;
+    color:limegreen;
+    position: relative;
+    top: 1rem;
+    font-size: 2rem;
+}
+#LinkProducts{
+    background-color: #997300;
+    border-radius: 20%;
+    color: white;
+    margin-left: 47rem;
+    font-size: 1.5rem;
+}
+#img1{
+    height: 35rem;
+    margin-left: 40rem;
+
+}
+
+
+
+

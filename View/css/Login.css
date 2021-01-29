@@ -1,0 +1,38 @@
+.login-container{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    top: 20rem;
+    margin-left: 30rem;
+}
+.loginSection{
+    color: black;
+
+}
+#inputEmail{
+height: 2rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.25rem;
+margin-left: 3rem;
+}
+#inputPassword{
+height: 2rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.25rem;
+}
+#LoginBtn{
+height: 3rem;
+width: 7rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.25rem;
+border-radius: 20%;
+font-weight: bold;
+background-color: #997300;
+color: white;
+margin-left: 14rem;
+}
+#ForgotPassword{
+    font-size: 1rem;
+}

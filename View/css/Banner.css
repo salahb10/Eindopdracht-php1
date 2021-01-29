@@ -1,0 +1,94 @@
+@media screen and (min-resolution: 120dpi) {
+    /*body {transform: scale(0.8);width: 125%;height: 125%;margin-left: -12.5%;}*/
+    body {
+        zoom: 0.8;
+    }
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.Banner {
+    font-family: "Segoe UI";
+    font-size: 1.875rem;
+    background-repeat: no-repeat;
+    background-color: #997300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.125rem;
+    width: 120rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0rem; /* required */
+}
+
+.leftBanner {
+    display: flex;
+    margin-left: 1.25rem;
+    width: 25rem;
+}
+
+.rightBanner {
+    display: flex;
+    margin-right: 1.25rem;
+}
+
+.rightBanner label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+}
+
+.logoImage {
+    position: relative;
+    top: 2.5rem;
+    width: 10%;
+    height: 90%;
+}
+
+
+.NavigationBar {
+    z-index: 1000;
+    display: block;
+    border: black 0.125rem groove;
+    background-color: #FFFFFF;
+    font-size: 12.5rem;
+    height: 3.125rem;
+    width: 120rem;
+    position: fixed;
+    top: 7.125rem; /* required */
+}
+
+.NavigationBar a {
+
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.NavigationBar a:hover {
+    color: goldenrod;
+}
+
+.NavigationBar a.active {
+    color: goldenrod;
+}
+
+.NavigationBar img {
+    position: absolute;
+    float: right;
+    width: 3.4375rem;
+    top: 0.25rem;
+    margin-left: 67.5rem;
+}
+
