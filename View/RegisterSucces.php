@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <hmtl>
 <head>
     <meta charset="UTF-8">

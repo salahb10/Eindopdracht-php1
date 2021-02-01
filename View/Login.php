@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<hmtl lang="nl">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
@@ -51,4 +51,4 @@
 
 
 
-</hmtl>
+</html>

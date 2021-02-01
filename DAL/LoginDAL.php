@@ -1,6 +1,6 @@
 <?php
 include 'DbConnection.php';
-include 'UserDAL.php';
+require_once dirname(__FILE__) . '/UserDAL.php';
 class LoginDAL
 {
      private $connection;
@@ -27,7 +27,7 @@ class LoginDAL
     //Registration process
     public function UserRegister($FirstName, $LastName, $Email, $Password)
     {
-        //Prepared statements for the registration
+        //Prepared statements for registration
         $stmt = $this->connection->prepare("INSERT INTO users  (firstname, lastname, email, password) VALUES(?,?,?,?)");
         $stmt->bind_param("ssss", $FirstName, $LastName, $Email, $Password);
         try {
@@ -35,8 +35,9 @@ class LoginDAL
             return true;
         } catch (PDOException $e) {
             return false;
-        }
+        } 
     }
+
 
 
 
